@@ -3,13 +3,14 @@
     --size: 0.25rem;
 
 
-    --primary-font: serif;
+    --primary-font: "Cormorant", serif;
+    --secondary-font: "Montserrat", sans-serif;
 }
 
 /*globals*/
 .body{
     margin: 0;
-    font-family: serif;
+    font-family: var(--primary-font);
     background-color: #f6efe4;
 }
 
