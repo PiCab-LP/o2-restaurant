@@ -1,12 +1,44 @@
-/*globals*/
-.body{
-    font-family: serif;
-    background-color: #f6efe4;
+/*variable*/
+:root{
+    --size: 0.25rem;
 
+
+    --primary-font: serif;
 }
 
-.list{
+/*globals*/
+.body{
+    margin: 0;
+    font-family: serif;
+    background-color: #f6efe4;
+}
+
+/*layout*/
+.container{
+    max-width: 1280px;
+    padding-inline: calc(var(--size) * 4);
+    margin-inline: auto;
+}
+/*components*/
+
+.nav{
+    padding-block: var(--size)
+}
+
+/*element*/
+
+.title{
+    margin: 0;
+    font-family: var(--primary-font);
+    font-size: calc(var(--size) * 8);
+    font-weight: 800;
+}
+
+.title--sm{
+    font-size: calc(var(--size) * 7 );
+}
+
+.link {
+    color: inherit;
     text-decoration: none;
-    list-style: none;
-    color: black;
 }
