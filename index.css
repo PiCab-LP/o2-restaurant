@@ -1,4 +1,12 @@
+/*globals*/
 .body{
     font-family: serif;
     background-color: #f6efe4;
+
+}
+
+.list{
+    text-decoration: none;
+    list-style: none;
+    color: black;
 }
