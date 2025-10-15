@@ -6,6 +6,7 @@
   --size: 0.25rem;
   --primary-font: "Cormorant", serif;
   --secondary-font: "Montserrat", sans-serif;
+  --tertiary-font: "Inter", sans-serif;
 }
  
 /* Globals */
@@ -52,6 +53,13 @@
   font-weight: 600;
 }
  
+.text{
+    margin: 0;
+    font-family: var(--tertiary-font);
+    font-size: calc(var(--size) * 4);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
 .link {
   color: inherit;
   text-decoration: none;
