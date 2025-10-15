@@ -64,12 +64,27 @@
  
 .button {
   padding: 0.5em 1em;
+  border: calc(var(--size) *0.5) solid var(--black-color);
   border-radius: 0.75em;
-  background-color: var(--primary-color);
+  background-color: var(--black-color);
   color: var(--white-color);
   text-decoration: none;
+  --primary-button-color: var(--black-color);
+  padding: 0.75em 1.25em;
+  font-family: var(--secondary-font);
 }
- 
+
+.button--primary{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.button--outline-white{
+    background-color: transparent;
+    color: var(--white-color);
+    backdrop-filter: blur(var(--size));
+    border: calc(var(--size) *0.5) solid var(--black-color);
+}
  
 /* Utils */
 .d-flex {
@@ -100,9 +115,22 @@
     position: relative;
     display: flex;
     min-height: 100dvh;
-
     color: var(--white-color);
+    text-align: center;
 
+}
+
+.hero__title{
+    margin: 0;
+    font-size: clamp(4rem,5vw,6rem);
+    font-family: var(--primary-font);
+}
+
+.hero__text{
+    margin: 0;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size:  clamp(1.125 rem, 2.5vwm,1.5rem);
 }
 
 .img--background{
