@@ -256,3 +256,24 @@
     flex-direction: row;
   }
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+ 
+  @media (width >=768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+ 
+  /* grid-template-columns: repeat(auto-fit, minmax(256px, 1fr)); */
+}
+
+.g-layout {
+  display: grid;
+}
+ 
+.g-layout--auto-fit-columns-lg {
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--size) * 80), 1fr));
+}
+ 
